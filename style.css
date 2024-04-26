@@ -1,0 +1,143 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+
+}
+.header-left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    
+}
+.header-left h1{
+    font-size: 5rem;
+}
+.header-left h3{
+    font-size: 1.8rem;
+    color: #474dff;
+}
+p{
+    font-size: 0.9rem;
+}
+.header-right img{
+    width: 100%
+}
+.infos{
+    display: flex;
+    background: rgb(20, 20, 20);
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+button{
+    background: #474dff;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 5px;
+    text-align: center;
+
+}
+.infos-right{
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+}
+.infos-right h3{
+    margin-left: 300px;
+}
+.investors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 200px;
+}
+.investors img{
+    height: 60px;
+    margin: 40px;
+}
+/*MEDIA QUERRY*/
+@media screen and (max-width: 768px) {
+    .header-left{
+        width: 100%;
+        margin-top: 60px;
+        
+    }
+    .header-left h1{
+        font-size: 3.5rem;
+    }
+    .infos{
+        margin-bottom: 0;
+    }
+    .investors img{
+        height: 30px;
+        margin: 20px;
+        padding: 0;
+    }
+    .investors{
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+    .infos-right h3{
+        margin-left: 150px;
+    }
+    .header-left h3{
+        font-size: 0.9rem;
+    }
+    p{
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .header{
+        flex-direction: column;
+    }
+    .header-left h1{
+        font-size: 1.5rem;
+    }
+
+    .header-left h3{
+        font-size: 1.3rem;
+    }
+    .header-left{
+        width: 100%;
+        
+    }
+    nav{
+        grid-template-columns: 40% 60%;
+    }
+    nav ul{
+        font-size: 0.7rem;
+    }
+    nav h2{
+        font-size: 1.3rem;
+    }
+    .infos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .infos-right h3{
+        margin-left: 0;
+        text-align: center;
+    }
+    .investors{
+        margin-left: 0;
+    }
+    .investors img{
+        height: 30px;
+        margin: 20px;
+    }
+    .header-right img{
+        width: 90%
+    }
+}
