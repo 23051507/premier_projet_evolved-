@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 5px;
+    font-family: "Verdana", serif;
+}
+body{
+    min-height: 100vh;
+    background:  rgb(33,33,33);
+    color: white;
+}
+li{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
